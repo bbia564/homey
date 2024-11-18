@@ -11,8 +11,8 @@ class Home404View extends GetView<PageLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.mills.value
-              ? const CircularProgressIndicator(color: Colors.orange)
+          () => controller.dubuque.value
+              ? const CircularProgressIndicator(color: Colors.blue)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class Home404View extends GetView<PageLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.uwezpvs();
+              controller.xquryz();
             },
             icon: const Icon(
               Icons.restart_alt,

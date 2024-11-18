@@ -72,7 +72,7 @@ If you have any questions or concerns about our privacy policy, please contact u
       applicationName: info.appName,
       applicationVersion: info.version,
       applicationIcon: Image.asset(
-        'assets/launcher.webp',
+        'assets/force.png',
         width: 76,
         height: 76,
       ),

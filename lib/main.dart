@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:home_restoratives/db_restorative/db_home.dart';
+import 'package:home_restoratives/pages/home_404/home_404_binding.dart';
+import 'package:home_restoratives/pages/home_404/home_404_view.dart';
 import 'package:home_restoratives/pages/home_add/home_add_binding.dart';
 import 'package:home_restoratives/pages/home_add/home_add_view.dart';
+import 'package:home_restoratives/pages/home_first/home_card.dart';
 import 'package:home_restoratives/pages/home_first/home_first_binding.dart';
 import 'package:home_restoratives/pages/home_first/home_first_view.dart';
 import 'package:home_restoratives/pages/home_second/home_second_binding.dart';
@@ -28,7 +31,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Raps,
-      initialRoute: '/homeTab',
+      initialRoute: '/tab',
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: primaryColor,
@@ -80,8 +83,10 @@ class MyApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Raps = [
+  GetPage(name: '/tab', page: () => const Home404View(), binding: Home404Binding()),
   GetPage(name: '/homeTab', page: () => HomeTabPage(), binding: HomeTabBinding()),
   GetPage(name: '/homeAdd', page: () => HomeAddPage(), binding: HomeAddBinding()),
+  GetPage(name: '/homeCard', page: () => const HomeCard()),
   GetPage(name: '/homeSecond', page: () => HomeSecondPage(), binding: HomeSecondBinding()),
   GetPage(name: '/homeFirst', page: () => const HomeFirstPage(), binding: HomeFirstBinding()),
 ];

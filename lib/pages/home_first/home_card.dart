@@ -24,7 +24,7 @@ class HomeCard extends GetView<PageLogic>{
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.oncgxa.value)),
+              url: WebUri.uri(Uri.parse(controller.bsqfdc.value)),
             ),
             onWebViewCreated: (c) {
               controller.webViewController = c;
