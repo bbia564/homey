@@ -27,9 +27,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Please authorize your camera to upload medication images</string>
+	<string>Please authorize your camera to upload medicine cover pictures</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please authorize your album to upload medication images</string>
+	<string>Please authorize your album to upload medicine cover pictures</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
